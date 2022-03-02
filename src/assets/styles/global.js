@@ -11,6 +11,8 @@ export default createGlobalStyle`
 
   body {
     background: ${({ theme }) => theme.colors.background};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   button {
