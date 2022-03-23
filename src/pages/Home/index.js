@@ -5,8 +5,6 @@ import {
 import arrow from '../../assets/icons/arrow.svg';
 import edit from '../../assets/icons/edit.svg';
 import trash from '../../assets/icons/trash.svg';
-import Modal from '../../components/Modal';
-import Loader from '../../components/Loader';
 
 export default function HomePage() {
   return (
@@ -14,8 +12,6 @@ export default function HomePage() {
       <InputSearchContainer>
         <input type="text" placeholder="Pesquisar contato" />
       </InputSearchContainer>
-      <Modal />
-      <Loader />
       <Header>
         <strong>3 contatos</strong>
         <Link to="/new">Novo contato</Link>
@@ -43,7 +39,6 @@ export default function HomePage() {
             <button type="button"><img src={trash} alt="Trash" /></button>
           </div>
         </Card>
-
       </ListContainer>
     </Container>
   );
